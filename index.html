@@ -1,47 +1,252 @@
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
-    <title>===================================</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
+    <title>Nikko AM</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
     <style>
     </style>
 </head>
 <body>
 
-<nav>
+<nav id="topNav">
     <div class="logo"><img src="images/logo.svg" alt="Logo"/></div>
     <div class="button">
-        <img src="images/search.svg" alt="search"/>
-        <img src="images/menu.svg" alt="menu"/>
+        <a href="#"><img src="images/search.svg" alt="search"/></a>
+        <a href="#" class="toggle"><img src="images/menu.svg" alt="menu" onclick="myFunction()"/></a>
     </div>
     <ul class="menu">
-        <li>abc</li>
-        <li>abc</li>
-        <li>abc</li>
-        <li>abc</li>
+        <li><a target="_blank" href="https://www.google.com/">About us</a></li>
+        <li><a target="_blank" href="https://www.google.com/">Sustainability</a></li>
+        <li><a target="_blank" href="https://www.google.com/">Insights & News</a></li>
+        <li><a target="_blank" href="https://www.google.com/">Strategies</a></li>
+        <li><a target="_blank" href="https://www.google.com/">Funds</a></li>
+        <li><a target="_blank" href="https://www.google.com/">How to invest</a></li>
+        <li>
+            <a target="_blank" href="https://www.google.com/" class="lang">Singapore</a>
+            &nbsp;
+            <img class="dropdown bullet" src="images/dropdown.svg" alt="dropdown">
+        </li>
     </ul>
 </nav>
 
-<div class="row">
-    <aside>left</aside>
-    <article>right</article>
-    <aside>left</aside>
-    <article>right</article>
-    <aside>left</aside>
-    <article>right</article>
-    <aside>left</aside>
-    <article>right</article>
+<div class="row sec-intro">
+    <div class="figure">
+        <svg id="wav0" xmlns="http://www.w3.org/2000/svg" viewBox="1450 620 460 500"></svg>
+    </div>
+    <div class="content">
+        <div class="wrapper">
+            <div class="txt-header">
+                Progressive Solutions<br>
+                Competitive Performance<br>
+                Global Citizen with Asian DNA<br>
+            </div>
+            <div class="detail-wrapper">
+                <div class="txt-detail">We’re one of Asia’s largest asset managers.</div>
+                <div class="txt-more">
+                    <a target="_blank" href="https://www.google.com/">Learn more about who we are</a>
+                    <img class="bullet" src="images/bullet-x.svg" alt="bullet">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<div class="row sec-focus">
+    <div class="figure">
+        <div class="wrapper">
+            <svg id="wav1" xmlns="http://www.w3.org/2000/svg" width="390" height="390" viewBox="0 0 390 390"></svg>
+        </div>
+    </div>
+    <div class="content">
+        <div class="wrapper">
+            <div class="txt-note">Team of unique combination</div>
+            <div class="txt-header">
+                Global Intelligence<br>
+                Asian Insights<br>
+                Local Experience<br>
+            </div>
+            <div class="detail-wrapper">
+                <div class="txt-detail">
+                    <div>
+                        We transform intelligent insights into innovative, relevant investment opportunities for our
+                        clients.
+                        Leveraging our unique combination of a global perspective complemented by our Asian DNA, we
+                        aspire
+                        to
+                        create
+                        sophisticated and diverse solutions that set new standards in the asset management industry.
+                    </div>
+                    <div class="txt-more">
+                        <a target="_blank" href="https://www.google.com/">Learn more about what makes us unique</a>
+                        <img class="bullet" src="images/bullet-y.svg" alt="bullet">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row sec-detail">
+    <div class="figure">
+        <div class="wrapper">
+            <ul class="numbers">
+                <li><a class="active" href="#slide-1" onclick="slide(this)">01</a></li>
+                <li><a href="#slide-2" onclick="slide(this)">02</a></li>
+                <li><a href="#slide-3" onclick="slide(this)">03</a></li>
+                <li><a href="#slide-4" onclick="slide(this)">04</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="wrapper">
+            <ul class="numbers">
+                <li><a class="active" href="#slide-1" onclick="slide(this)">01</a></li>
+                <li><a href="#slide-2" onclick="slide(this)">02</a></li>
+                <li><a href="#slide-3" onclick="slide(this)">03</a></li>
+                <li><a href="#slide-4" onclick="slide(this)">04</a></li>
+            </ul>
+            <div class="slider">
+                <div class="slides">
+                    <div id="slide-1">
+                        <div class="txt-header">Our Featured<br>Funds</div>
+                        <div class="txt-sub">Nikko AM ARK Disruptive<br>Innovation Fund</div>
+                        <div class="graph"><img src="images/graph-0.svg" alt="graph"></div>
+                        <div class="data">
+                            <ul>
+                                <li><span class="title">NAV (per 100 shares)</span><span class="detail">¥196,977</span>
+                                </li>
+                                <li><span class="title">Net Assets</span><span class="detail">7,309,193 million</span>
+                                </li>
+                                <li><span class="title">Day Change</span><span class="detail">- ¥1,094</span></li>
+                                <li><span class="title">Issued</span><span class="detail">3,710,686,634 shares</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="txt-more">
+                            <a target="_blank" href="https://www.google.com/">Explore more funds</a>
+                            <img class="bullet" src="images/bullet-x.svg" alt="bullet">
+                        </div>
+                    </div>
+                    <div id="slide-2">
+                        <div class="txt-header">Our Featured<br>Funds</div>
+                        <div class="txt-sub">Nikko AM ARK Disruptive<br>Innovation Fund</div>
+                        <div class="graph"><img src="images/graph-0.svg" alt="graph"></div>
+                        <div class="data">
+                            <ul>
+                                <li><span class="title">NAV (per 100 shares)</span><span class="detail">¥196,977</span>
+                                </li>
+                                <li><span class="title">Net Assets</span><span class="detail">7,309,193 million</span>
+                                </li>
+                                <li><span class="title">Day Change</span><span class="detail">- ¥1,094</span></li>
+                                <li><span class="title">Issued</span><span class="detail">3,710,686,634 shares</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="txt-more">
+                            <a target="_blank" href="https://www.google.com/">Explore more funds</a>
+                            <img class="bullet" src="images/bullet-x.svg" alt="bullet">
+                        </div>
+                    </div>
+                    <div id="slide-3">
+                        <div class="txt-header">Our Featured<br>Funds</div>
+                        <div class="txt-sub">Nikko AM ARK Disruptive<br>Innovation Fund</div>
+                        <div class="graph"><img src="images/graph-0.svg" alt="graph"></div>
+                        <div class="data">
+                            <ul>
+                                <li><span class="title">NAV (per 100 shares)</span><span class="detail">¥196,977</span>
+                                </li>
+                                <li><span class="title">Net Assets</span><span class="detail">7,309,193 million</span>
+                                </li>
+                                <li><span class="title">Day Change</span><span class="detail">- ¥1,094</span></li>
+                                <li><span class="title">Issued</span><span class="detail">3,710,686,634 shares</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="txt-more">
+                            <a target="_blank" href="https://www.google.com/">Explore more funds</a>
+                            <img class="bullet" src="images/bullet-x.svg" alt="bullet">
+                        </div>
+                    </div>
+                    <div id="slide-4">
+                        <div class="txt-header">Our Featured<br>Funds</div>
+                        <div class="txt-sub">Nikko AM ARK Disruptive<br>Innovation Fund</div>
+                        <div class="graph"><img src="images/graph-0.svg" alt="graph"></div>
+                        <div class="data">
+                            <ul>
+                                <li><span class="title">NAV (per 100 shares)</span><span class="detail">¥196,977</span>
+                                </li>
+                                <li><span class="title">Net Assets</span><span class="detail">7,309,193 million</span>
+                                </li>
+                                <li><span class="title">Day Change</span><span class="detail">- ¥1,094</span></li>
+                                <li><span class="title">Issued</span><span class="detail">3,710,686,634 shares</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="txt-more">
+                            <a target="_blank" href="https://www.google.com/">Explore more funds</a>
+                            <img class="bullet" src="images/bullet-x.svg" alt="bullet">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row sec-invite">
+    <div class="figure">
+        <div class="wrapper">
+            <div class="txt-header">
+                <div class="txt-invest">Invest with</div>
+                <div class="txt-nikko">Nikko AM</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <div>
+                        <span>Equity</span>
+                        <img class="bullet" src="images/bullet-z.svg" alt="bullet">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>Bond</span>
+                        <img class="bullet" src="images/bullet-z.svg" alt="bullet">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>Multi-Assets</span>
+                        <img class="bullet" src="images/bullet-z.svg" alt="bullet">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>ETFs</span>
+                        <img class="bullet" src="images/bullet-z.svg" alt="bullet">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <script>
     function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
+        const nav = document.getElementById("topNav");
+        nav.className = nav.className === "" ? "responsive" : "";
+    }
+
+    function slide(e) {
+        const siblings = e.parentElement.parentElement.children
+        for (let i = 0; i < siblings.length; i++) {
+            siblings[i].firstChild.className = ""
         }
+        e.className = "active"
     }
 </script>
+<script src="js/wave.js"></script>
 </body>
 </html>
